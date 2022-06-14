@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { useParseHTMLStringToString } from '../utils/useParseHTMLStringToString';
 import { useImageUrl } from '../utils/useImageUrl';
-import { generalData } from '../data/portfolio';
 
 const BlogList = ({ posts }) => {
 	return (
@@ -17,7 +16,7 @@ const BlogList = ({ posts }) => {
 							<div className="relative h-32 w-full">
 								<Image
 									className=" rounded-t-lg"
-									src={imageUrl || generalData.profileImg}
+									src={imageUrl || '/../public/default.jpeg'}
 									alt="blog-image"
 									layout="fill" // required
 									objectFit="cover" // change to suit your needs

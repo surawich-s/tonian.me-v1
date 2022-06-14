@@ -1,6 +1,5 @@
 import { AiFillGithub } from 'react-icons/ai';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import { generalData } from '../data/portfolio';
 import { useImageUrl } from '../utils/useImageUrl';
 
 const ProjectList = ({ projects }) => {
@@ -8,15 +7,17 @@ const ProjectList = ({ projects }) => {
 		<section id="project" className="w-full">
 			<div className="my-4 flex w-full flex-col items-center justify-center md:my-8 md:gap-24">
 				{projects.map((project) => {
-					const imageUrl = useImageUrl(project.node.content);
+					let imageUrl = useImageUrl(project.node.content);
+					if (!imageUrl) {
+						imageUrl = 'default.jpeg';
+					}
+
 					return (
 						<div
 							key={project.node.id}
 							className="my-4 flex md:h-80 flex-col items-center justify-end rounded-lg p-4 text-white drop-shadow-md md:m-0  w-3/4 sm:w-1/2"
 							style={{
-								background: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(${
-									imageUrl || generalData.profileImg
-								})`,
+								background: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(${imageUrl})`,
 							}}
 						>
 							<div className="my-2 transition delay-100 hover:text-green-400">
