@@ -2,7 +2,7 @@
 const nextConfig = {
 	reactStrictMode: true,
 	images: {
-		domains: ['1.bp.blogspot.com', 'pbs.twimg.com', '18.142.239.122'],
+		domains: ['pbs.twimg.com', process.env.URL],
 	},
 };
 
