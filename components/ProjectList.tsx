@@ -2,11 +2,11 @@ import { AiFillGithub } from 'react-icons/ai';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { useImageUrl } from '../utils/useImageUrl';
 
-const ProjectList = ({ projects }) => {
+const ProjectList = ({ projects }: any) => {
 	return (
 		<section id="project" className="w-full">
 			<div className="my-4 flex w-full flex-col items-center justify-center md:my-8 md:gap-24">
-				{projects.map((project) => {
+				{projects.map((project: any) => {
 					let imageUrl = useImageUrl(project.node.content);
 					if (!imageUrl) {
 						imageUrl = 'default.jpeg';

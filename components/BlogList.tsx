@@ -2,11 +2,11 @@ import Image from 'next/image';
 import { useParseHTMLStringToString } from '../utils/useParseHTMLStringToString';
 import { useImageUrl } from '../utils/useImageUrl';
 
-const BlogList = ({ posts }) => {
+const BlogList = ({ posts }: any) => {
 	return (
 		<section id="project" className="w-full">
 			<ul className="my-4 flex w-full flex-row flex-wrap justify-center md:my-8 md:gap-8">
-				{posts.map((post) => {
+				{posts.map((post: any) => {
 					const imageUrl = useImageUrl(post.node.content);
 					return (
 						<li
