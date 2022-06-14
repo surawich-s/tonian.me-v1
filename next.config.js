@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+	reactStrictMode: true,
+	images: {
+		domains: ['1.bp.blogspot.com', 'pbs.twimg.com', '18.142.239.122'],
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
