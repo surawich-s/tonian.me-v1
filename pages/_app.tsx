@@ -4,7 +4,7 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const client = new ApolloClient({
-		uri: 'https://18.142.239.122/graphql',
+		uri: process.env.NEXT_PUBLIC_URL,
 		cache: new InMemoryCache(),
 	});
 	return (
