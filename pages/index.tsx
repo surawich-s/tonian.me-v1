@@ -16,7 +16,7 @@ export default function Home() {
 			</Head>
 			<Navbar />
 			<main className="mx-auto flex flex-1 flex-col items-center text-center md:w-3/4">
-				{!loading && <ProjectList projects={data.posts.edges} />}
+				{!loading && <ProjectList projects={data.posts.nodes} />}
 				<ScrollTopButton />
 			</main>
 		</div>

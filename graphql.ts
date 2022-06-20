@@ -1,23 +1,21 @@
 import { gql } from '@apollo/client';
 
 export const GET_POSTS = gql`
-	query GetPostsEdges {
+	query Posts {
 		posts {
-			edges {
-				node {
-					id
-					title
-					excerpt
-					content
-					date
-					featuredImage {
-						node {
-							id
-							sourceUrl
-						}
-					}
-				}
+			nodes {
+				title
+				content
+				excerpt
 			}
+		}
+	}
+`;
+
+export const LOGIN = gql`
+	mutation Login($input: LoginInput!) {
+		login(input: $input) {
+			authToken
 		}
 	}
 `;

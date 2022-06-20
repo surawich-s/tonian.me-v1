@@ -16,7 +16,7 @@ export default function Blog() {
 			</Head>
 			<Navbar />
 			<main className="mx-auto flex flex-1 flex-col items-center text-center md:w-3/4">
-				{!loading ? <BlogList posts={data.posts.edges} /> : <p>Loading...</p>}
+				{!loading && <BlogList posts={data.posts.nodes} />}
 				<ScrollTopButton />
 			</main>
 		</div>
