@@ -12,7 +12,7 @@ const ProjectList = ({ projects }: any) => {
 					return (
 						<div
 							key={project.id}
-							className="relative flex h-auto flex-col justify-center items-center text-center my-4 md:h-80 rounded-lg p-4 text-white drop-shadow-md md:m-0  w-3/4 md:w-1/2"
+							className="relative flex h-auto flex-col justify-end items-center text-center my-4 md:h-80 rounded-lg p-4 text-white drop-shadow-md md:m-0  w-3/4 md:w-1/2"
 						>
 							<div className="w-64 h-32 z-0 overflow-hidden">
 								<Image
