@@ -4,9 +4,16 @@ export const GET_POSTS = gql`
 	query Posts {
 		posts {
 			nodes {
+				id
 				title
 				content
 				excerpt
+				featuredImage {
+					node {
+						id
+						mediaItemUrl
+					}
+				}
 			}
 		}
 	}
