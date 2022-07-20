@@ -6,7 +6,7 @@ import data from "../utils/data.json";
 
 export default function Home() {
     return (
-        <div className="flex min-h-screen flex-col justify-center py-2">
+        <div className="flex min-h-screen flex-col justify-center">
             <Head>
                 <title>Surawich Sittsarn</title>
                 <link rel="icon" href="/favicon.ico" />

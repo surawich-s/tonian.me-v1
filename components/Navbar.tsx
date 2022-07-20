@@ -2,19 +2,21 @@ import Link from "next/link";
 
 const Navbar = () => {
     const navigation = [
-        { id: 1, name: "Project", href: "/" },
-        { id: 2, name: "Blog", href: "/blog" },
-        { id: 3, name: "Me", href: "/me" },
+        { id: 1, name: "Blog", href: "/blog" },
+        { id: 2, name: "Me", href: "/me" },
     ];
 
     return (
         <nav
             id="navbar"
-            className="top-0 flex flex-col sm:flex-row items-center justify-center mx-4 my-4 "
+            className="top-0 flex flex-col sm:flex-row items-center justify-center px-4 py-4 bg-neutral-900"
         >
-            <h1 className="dark:text-white flex-1 mx-auto mb-4 sm:mb-0 sm:mr-auto sm:ml-4 text-3xl cursor-default">
-                tonian.me
-            </h1>
+            <Link href="/">
+                <a className="dark:text-white flex-1 mx-auto mb-4 sm:mb-0 sm:mr-auto sm:ml-4 text-3xl">
+                    <h1>tonian.me</h1>
+                </a>
+            </Link>
+
             <div className="gap-x-4 flex flex-row items-center justify-center">
                 {navigation.map((item) => {
                     const { id, href, name } = item;

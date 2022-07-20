@@ -6,7 +6,7 @@ import defaultImage from "../public/default.jpg";
 const ProjectList = ({ projects }: any) => {
     return (
         <section id="project" className="w-full">
-            <div className="my-4 flex w-full flex-col items-center justify-center md:my-8 lg:my-12 md:gap-24">
+            <div className="my-4 flex w-full flex-col items-center justify-center md:my-8 md:gap-8">
                 {projects.map((project: any) => {
                     const imageUrl =
                         project.featuredImage?.node?.mediaItemUrl ||
