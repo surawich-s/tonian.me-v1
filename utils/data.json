@@ -1,11 +1,25 @@
 {
     "projects": [
         {
+            "id": 4,
+            "title": "Intsagram",
+            "description": "Fullstack Social Media Clone built with MERN stack",
+            "uri": "https://intsagram-web.vercel.app/",
+            "github_uri": "https://github.com/surawich-s/intsagram-web"
+        },
+        {
+            "id": 3,
+            "title": "Intsagram",
+            "description": "Fullstack Social Media Clone built with MERN stack",
+            "uri": "https://intsagram-web.vercel.app/",
+            "github_uri": "https://github.com/surawich-s/intsagram-web"
+        },
+        {
             "id": 2,
             "title": "Intsagram",
             "description": "Fullstack Social Media Clone built with MERN stack",
             "uri": "https://intsagram-web.vercel.app/",
-            "github_uri": ""
+            "github_uri": "https://github.com/surawich-s/intsagram-web"
         },
         {
             "id": 1,

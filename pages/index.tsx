@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
+import Profile from "../components/Profile";
 import ProjectList from "../components/ProjectList";
-import ScrollTopButton from "../components/ScrollTopButton";
 import data from "../utils/data.json";
 
 export default function Home() {
@@ -11,11 +11,10 @@ export default function Home() {
                 <title>Surawich Sittsarn</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar />
-            <main className="mx-auto flex flex-1 flex-col items-center text-center w-4/5 md:w-3/4">
+            <Layout>
+                <Profile />
                 <ProjectList projects={data.projects} />
-                <ScrollTopButton />
-            </main>
+            </Layout>
         </div>
     );
 }

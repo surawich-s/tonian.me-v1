@@ -1,48 +1,30 @@
-import Image from "next/image";
 import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
-import defaultImage from "../public/default.jpg";
 
 const Profile = () => {
     return (
         <section className="mx-8 my-4 flex w-9/12 flex-col items-center justify-center rounded-lg p-4">
-            <div className="relative h-32 w-32 rounded-full">
-                <Image
-                    className="rounded-full"
-                    src={defaultImage}
-                    alt="project-image"
-                    layout="fill" // required
-                    objectFit="cover" // change to suit your needs
-                />
-            </div>
-            <div className="my-4 dark:text-white">
-                <h1 className="text-2xl">Surawich Sittisarn</h1>
-                <div className="my-2 flex flex-col items-start justify-start">
-                    <a
-                        href="mailto:surawich.sit@gmail.com"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <div className="flex flex-row items-center transition delay-150 hover:text-green-700 dark:hover:text-green-400">
-                            <AiOutlineMail />
-
-                            <div className="ml-2 text-xl dark:text-white">
-                                surawich.sit@gmail.com
-                            </div>
-                        </div>
-                    </a>
-                    <a
-                        href="https://github.com/surawich-s"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <div className="flex flex-row items-center transition delay-150 hover:text-green-700 dark:hover:text-green-400">
-                            <AiFillGithub />
-                            <div className="ml-2 text-xl dark:text-white">
-                                surawich-s
-                            </div>
-                        </div>
-                    </a>
-                </div>
+            <h1 className="text-6xl tracking-wide my-8 transition delay-150">
+                Surawich Sittisarn
+            </h1>
+            <div className="my-2 flex flex-row gap-x-6 items-start justify-start">
+                <a
+                    href="mailto:surawich.sit@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <div className="flex flex-row items-center transition delay-150 hover:text-green-700 dark:hover:text-green-400">
+                        <AiOutlineMail className="w-8 h-8" />
+                    </div>
+                </a>
+                <a
+                    href="https://github.com/surawich-s"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <div className="flex flex-row items-center transition delay-150 hover:text-green-700 dark:hover:text-green-400">
+                        <AiFillGithub className="w-8 h-8" />
+                    </div>
+                </a>
             </div>
         </section>
     );
