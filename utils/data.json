@@ -1,32 +1,39 @@
 {
     "projects": [
         {
-            "id": 4,
-            "title": "Intsagram",
-            "description": "Fullstack Social Media Clone built with MERN stack",
-            "uri": "https://intsagram-web.vercel.app/",
-            "github_uri": "https://github.com/surawich-s/intsagram-web"
+            "id": 1,
+            "title": "SongFinder",
+            "description": "DOM Vanilla JavaScript Songfinder / Responsive design(Flex, Grid)",
+            "uri": "https://songfinder.vercel.app/",
+            "github_uri": "https://github.com/surawich-s/songfinder"
+        },
+        {
+            "id": 2,
+            "title": "Nattapat Firm",
+            "description": "",
+            "uri": "http://nattapatfirm.com",
+            "github_uri": ""
         },
         {
             "id": 3,
             "title": "Intsagram",
-            "description": "Fullstack Social Media Clone built with MERN stack",
+            "description": "Fullstack Instagram Clone built with MERN stack",
             "uri": "https://intsagram-web.vercel.app/",
             "github_uri": "https://github.com/surawich-s/intsagram-web"
         },
         {
-            "id": 2,
-            "title": "Intsagram",
-            "description": "Fullstack Social Media Clone built with MERN stack",
-            "uri": "https://intsagram-web.vercel.app/",
-            "github_uri": "https://github.com/surawich-s/intsagram-web"
+            "id": 4,
+            "title": "Portfolio",
+            "description": "Built with Next Typescript Tailwind CSS",
+            "uri": "https://tonian.me",
+            "github_uri": "https://github.com/surawich-s/tonianme-web"
         },
         {
-            "id": 1,
-            "title": "nattapatfirm.com",
-            "description": "",
-            "uri": "http://nattapatfirm.com",
-            "github_uri": ""
+            "id": 5,
+            "title": "Next-cms-sanity",
+            "description": "Next.js + typescript + Sanity CMS Boilerplate",
+            "uri": "",
+            "github_uri": "https://github.com/surawich-s/next-cms-sanity"
         }
     ]
 }

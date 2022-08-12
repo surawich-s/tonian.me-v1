@@ -10,7 +10,7 @@ class MyDocument extends Document {
         return (
             <Html className="mx-auto my-0 scroll-smooth" lang="en">
                 <Head />
-                <body className="font-sans text-black dark:text-white bg-white dark:bg-black">
+                <body className="font-sans text-black dark:text-white bg-slate-50 dark:bg-black">
                     <Main />
                     <NextScript />
                 </body>

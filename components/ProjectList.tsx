@@ -2,6 +2,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 import defaultImage from "../public/default.jpg";
+import RenderLink from "./RenderLink";
 
 interface Project {
     id: number;
@@ -19,46 +20,40 @@ const ProjectList = ({ projects }: Props) => {
     return (
         <section id="project" className="w-full">
             <div className="my-4 flex w-full flex-col items-center justify-center md:my-8 md:gap-8">
-                {projects.map((project) => {
-                    return (
-                        <div
-                            key={project.id}
-                            className="flex h-4/5 flex-col border-2 justify-end items-center text-center my-4 md:h-80 rounded-lg p-4 drop-shadow-md md:m-0  w-full md:w-1/2"
-                        >
-                            <div className="flex-col items-center justify-end">
-                                <div className="my-2 transition delay-100 hover:text-green-400">
-                                    <a
-                                        href={project.uri}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
+                {projects
+                    .slice(0)
+                    .reverse()
+                    .map((project) => {
+                        return (
+                            <div
+                                key={project.id}
+                                className="flex h-80 flex-col justify-center items-center text-center bg-white dark:bg-neutral-900 my-4 rounded-lg p-4 drop-shadow-md md:m-0  w-full md:w-1/2"
+                            >
+                                <div className="my-2 px-4 transition delay-100 hover:text-green-400">
+                                    <RenderLink uri={project.uri} mode="text">
                                         <h1 className="text-xl md:text-2xl">
                                             {project.title}
                                         </h1>
-                                    </a>
-                                    <p>{project.description}</p>
+                                        <p className="mt-2">
+                                            {project.description}
+                                        </p>
+                                    </RenderLink>
                                 </div>
 
-                                <div className="my-4 flex flex-row justify-center gap-x-4">
-                                    <a
-                                        href={project.github_uri}
-                                        target="_blank"
-                                        rel="noreferrer"
+                                <div className="my-4 flex flex-row justify-center items-center gap-x-4">
+                                    <RenderLink
+                                        uri={project.github_uri}
+                                        mode="icon"
                                     >
-                                        <AiFillGithub className="w-4 h-4 delay-50 transition duration-300 ease-in hover:scale-125 hover:text-green-400" />
-                                    </a>
-                                    <a
-                                        href={project.uri}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
+                                        <AiFillGithub className="w-5 h-5 delay-50 transition duration-300 ease-in hover:scale-125 hover:text-green-400" />
+                                    </RenderLink>
+                                    <RenderLink uri={project.uri} mode="icon">
                                         <FaExternalLinkAlt className="w-4 h-4 delay-50 transition duration-300 ease-in hover:scale-125 hover:text-green-400" />
-                                    </a>
+                                    </RenderLink>
                                 </div>
                             </div>
-                        </div>
-                    );
-                })}
+                        );
+                    })}
             </div>
         </section>
     );

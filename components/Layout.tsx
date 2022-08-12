@@ -12,13 +12,13 @@ const Layout = ({ children }: LayoutProps) => {
         <main className="w-full relative">
             <button className="absolute top-0 right-0 p-4">
                 {theme === "dark" ? (
-                    <MdOutlineLightMode
-                        className="w-8 h-8"
+                    <MdOutlineDarkMode
+                        className="w-8 h-8 delay-50 transition duration-300 ease-in hover:scale-125 hover:text-green-400"
                         onClick={() => setTheme("light")}
                     />
                 ) : (
-                    <MdOutlineDarkMode
-                        className="w-8 h-8"
+                    <MdOutlineLightMode
+                        className="w-8 h-8 delay-50 transition duration-300 ease-in hover:scale-125 hover:text-green-400"
                         onClick={() => setTheme("dark")}
                     />
                 )}
