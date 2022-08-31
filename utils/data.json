@@ -32,7 +32,7 @@
             "id": 5,
             "title": "Next-cms-sanity",
             "description": "Next.js + typescript + Sanity CMS Boilerplate",
-            "uri": "",
+            "uri": "https://next-cms-sanity-boilerplate.vercel.app/",
             "github_uri": "https://github.com/surawich-s/next-cms-sanity"
         }
     ]
