@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { AiOutlineArrowUp } from "react-icons/ai";
 const ScrollTopButton = () => {
     const [scrollY, setScrollY] = useState(0);

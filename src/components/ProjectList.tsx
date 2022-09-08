@@ -1,7 +1,5 @@
 import { AiFillGithub } from "react-icons/ai";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import Image from "next/image";
-import defaultImage from "../public/default.jpg";
 import RenderLink from "./RenderLink";
 
 interface Project {

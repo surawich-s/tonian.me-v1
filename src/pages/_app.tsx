@@ -5,7 +5,11 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <ThemeProvider attribute="class">
+        <ThemeProvider
+            enableSystem={true}
+            attribute="class"
+            disableTransitionOnChange={true}
+        >
             <Component {...pageProps} />
         </ThemeProvider>
     );
