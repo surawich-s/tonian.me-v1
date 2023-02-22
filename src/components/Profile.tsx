@@ -8,15 +8,6 @@ const Profile = () => {
             </h1>
             <div className="my-2 flex flex-row gap-x-6 items-start justify-start">
                 <a
-                    href="mailto:surawich.sit@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <div className="flex flex-row items-center delay-50 transition duration-300 ease-in hover:scale-125 hover:text-green-400">
-                        <AiOutlineMail className="w-8 h-8" />
-                    </div>
-                </a>
-                <a
                     href="https://github.com/surawich-s"
                     target="_blank"
                     rel="noreferrer"
